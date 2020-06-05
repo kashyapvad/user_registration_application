@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: user_registration_application_test
+  database: user_registration_application
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,4 +80,8 @@ test:
 #
 production:
   <<: *default
-  database: user_registration_application_production
+  host: ec2-52-202-22-140.compute-1.amazonaws.com
+  database: d7025l818ijeqe
+  port: 5432
+  username: usmprklbifsjjz
+  password: c40152c79d16e1595b57209838eb94db3f512f24f5ee208285a6acd1df4832dd
