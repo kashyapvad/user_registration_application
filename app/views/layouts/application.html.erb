@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="bg-black">
 <head>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -18,21 +18,17 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 <!-- Signup-->
-<section class="signup-section" id="signup">
-  <div class="container">
+<section class="contact-section bg-black" id="signup">
     <div class="row">
       <div class="col-md-10 col-lg-8 mx-auto text-center">
-        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
         <h2 class="text-white mb-5">User Registration Application</h2>
         <body>
         <%= yield %>
         </body>
       </div>
-    </div>
   </div>
-</section>
 <!-- Contact-->
-<section class="contact-section bg-black">
+<div class="contact-section bg-black">
   <div class="container">
     <div class="row">
       <div class="col-md-4 mb-3 mb-md-0">
@@ -67,8 +63,8 @@
       </div>
     </div>
   </div>
+</div>
 </section>
-<!-- Footer-->
 <footer class="footer bg-black small text-center text-white-50">
   <div class="container" id="pro">Professional Profile Links</div>
   <div class="social d-flex justify-content-center">
