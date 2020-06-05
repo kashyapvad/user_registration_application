@@ -10,7 +10,7 @@ class NotificationsMailer < ApplicationMailer
     if Rails.env.development? or Rails.env.test?
       @link = "http://localhost:3000/login"
     elsif Rails.env.production?
-      @link = "https://user-registration-incubit.herokuapp.com/login"
+      @link = "https://user-registration-application.herokuapp.com/login"
     end
     mail to: @user.email
   end
@@ -25,7 +25,7 @@ class NotificationsMailer < ApplicationMailer
     if Rails.env.development? or Rails.env.test?
       @link = "http://localhost:3000/reset_password/#{@user.link_hash.slug}"
     elsif Rails.env.production?
-      @link = "https://user-registration-incubit.herokuapp.com/reset_password/#{@user.link_hash.slug}"
+      @link = "https://user-registration-application.herokuapp.com/reset_password/#{@user.link_hash.slug}"
     end
     mail to: @user.email
   end
