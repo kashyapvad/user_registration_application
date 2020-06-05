@@ -50,10 +50,6 @@ a {
   }
 }
 
-#pro{
-  color: white;
-}
-
 th {
   padding-bottom: 5px;
 }
@@ -69,6 +65,10 @@ div {
 }
 
 #notice {
+  color: white;
+}
+
+#pro{
   color: white;
 }
 
@@ -109,12 +109,4 @@ div {
 label {
   display: block;
   color: white;
-}
-
-footer {
-  position:fixed;
-  left:0px;
-  bottom:0px;
-  height:30px;
-  width:100%;
 }
