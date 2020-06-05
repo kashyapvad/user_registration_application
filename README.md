@@ -4,7 +4,7 @@ This document describes how to run and test the application locally in developme
 
 * Firstly, If you encounter any trouble in getting it up and running locally then please use the following link to test it in production mode
     
-    * <a target = "blank" href = "https://user-registration-application.herokuapp.com/">https://user-registration-application.herokuapp.com/</a>
+    * <a target="blank" href="https://user-registration-application.herokuapp.com/">user-registration-application</a>
     * Make sure that the emails you use for succesful sign ups have mailboxes or else the emails will bounce which would hurt my IP's reputation.
     * check your junk/spam folder if you do not receive notification emails to your inbox.
 
