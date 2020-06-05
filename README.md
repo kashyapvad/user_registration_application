@@ -7,6 +7,22 @@ This document describes how to run and test the application locally in developme
     * <a target="blank" href="https://user-registration-application.herokuapp.com/">user-registration-application</a>
     * Make sure that the emails you use for succesful sign ups have mailboxes or else the emails will bounce which would hurt my IP's reputation.
     * check your junk/spam folder if you do not receive notification emails to your inbox.
+    
+* Feature Description:
+
+    * As a user, You can visit sign up page and sign up with my email (with valid format and unique in database) and password (with confirmation and at least eight characters).
+    * When You sign up successfully, You would see my profile page.
+    * When You sign up successfully, You would receive a welcome email.
+    * When You sign up incorrectly, You would see error message in sign up page.
+    * As a user, You can edit my username and password in profile page. You can also see my email in the page but You can not edit it.
+    * When You first time entering the page, my username would be my email prefixing, e.g. (email is “user@example.com” , username would be “user”)
+    * When You edit my username, it should contain at least five characters. (Default username does not has this limitation)
+    * As a user, You can log out the system.
+    * When You log out, You would see the login page.
+    * As a user, You can visit login page and login with my email and password.
+    * As a user, You can visit login page and click “forgot password” if You forgot my password.
+    * When You visit forgot password page, You can fill my email and ask the system to send reset password email.
+    * As a user, You can visit reset password page from the link inside reset password email and reset my password (with confirmation and at least eight characters). The link should be unique and only valid within six hours.
 
 * Ruby version - 2.6.3
 
