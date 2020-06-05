@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="https://blackrockdigital.github.io/startbootstrap-grayscale/css/styles.css" rel="stylesheet"/>
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"/>
+
+  <title>Welcome</title>
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<!-- Signup-->
+<section class="signup-section" id="signup">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-lg-8 mx-auto text-center">
+        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+        <h2 class="text-white mb-5">User Registration Application for coding assessment.</h2>
+        <body>
+        <%= yield %>
+        </body>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact-->
+<section class="contact-section bg-black">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-3 mb-md-0">
+        <div class="card py-4 h-100">
+          <div class="card-body text-center">
+            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+            <h4 class="text-uppercase m-0">Candidate Address</h4>
+            <hr class="my-4"/>
+            <div class="small text-black-50">Kashyap Vadrevu, 301 King Street, San Francisco CA</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 mb-md-0">
+        <div class="card py-4 h-100">
+          <div class="card-body text-center">
+            <i class="fas fa-envelope text-primary mb-2"></i>
+            <h4 class="text-uppercase m-0">Candidate Email</h4>
+            <hr class="my-4"/>
+            <div class="small text-black-50"><a href="#!">kashyap.vad@gmail.com</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 mb-md-0">
+        <div class="card py-4 h-100">
+          <div class="card-body text-center">
+            <i class="fas fa-mobile-alt text-primary mb-2"></i>
+            <h4 class="text-uppercase m-0">Candidate Mobile</h4>
+            <hr class="my-4"/>
+            <div class="small text-black-50">+1 (650) 430-4038</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="social d-flex justify-content-center">
+      <a class="mx-2" target="blank" href="https://www.linkedin.com/in/kashyap-vadrevu-505686ba/"><i class="fab fa-linkedin"></i></a><a class="mx-2" target="blank" href="https://www.angel.co/u/kashyap-vadrevu"><i class="fab fa-angellist"></i></a><a class="mx-2" target="blank" href="https://www.github.com/kashyapvad"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+</section>
+<!-- Footer-->
+<footer class="footer bg-black small text-center text-white-50">
+  <div class="container">Coding Assessment</div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Core theme JS-->
+<script src="http://blackrockdigital.github.io/startbootstrap-grayscale/js/scripts.js"></script>
+</html>

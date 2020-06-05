@@ -1,0 +1,9 @@
+<% if current_user %>
+  <p class="text-white mb-5"> Welcome <%= current_user.username %>, You're logged in</p>
+  <%= link_to "Edit", "users/#{current_user.slug}/edit", :class => "btn btn-primary mx-auto", :id => "button" %>
+  <%= link_to "Log Out", logout_path, :class => "btn btn-primary mx-auto", :id => "button" %>
+<% else %>
+  <%= link_to "Sign Up", signup_path, :class => "btn btn-primary mx-auto", :id => "button" %>
+  <%= link_to "Log In", login_path, :class => "btn btn-primary mx-auto", :id => "button" %>
+<% end %>
+<p id="notice" <%= notice %></p>
