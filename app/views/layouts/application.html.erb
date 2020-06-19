@@ -1,81 +1,108 @@
 <!DOCTYPE html>
-<html class="bg-black">
+<html lang="en">
+
 <head>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <!-- Core theme CSS (includes Bootstrap)-->
-  <link href="https://blackrockdigital.github.io/startbootstrap-grayscale/css/styles.css" rel="stylesheet"/>
-  <!-- Font Awesome icons (free version)-->
-  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-  <!-- Google fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"/>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="rQCFAu-Ftj7_GW7XERFnLrYzrkV9zbif0tXAsHoEM4c"/>
+
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://blackrockdigital.io/img/ico/apple-touch-icon-57x57.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://blackrockdigital.io/img/ico/apple-touch-icon-114x114.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://blackrockdigital.io/img/ico/apple-touch-icon-72x72.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blackrockdigital.io/img/ico/apple-touch-icon-144x144.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://blackrockdigital.io/img/ico/apple-touch-icon-60x60.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://blackrockdigital.io/img/ico/apple-touch-icon-120x120.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://blackrockdigital.io/img/ico/apple-touch-icon-76x76.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://blackrockdigital.io/img/ico/apple-touch-icon-152x152.png"/>
+  <link rel="icon" type="image/png" href="https://blackrockdigital.io/img/ico/favicon-196x196.png" sizes="196x196"/>
+  <link rel="icon" type="image/png" href="https://blackrockdigital.io/img/ico/favicon-96x96.png" sizes="96x96"/>
+  <link rel="icon" type="image/png" href="https://blackrockdigital.io/img/ico/favicon-32x32.png" sizes="32x32"/>
+  <link rel="icon" type="image/png" href="https://blackrockdigital.io/img/ico/favicon-16x16.png" sizes="16x16"/>
+  <link rel="icon" type="image/png" href="https://blackrockdigital.io/img/ico/favicon-128.png" sizes="128x128"/>
+  <meta name="application-name" content="Blackrock Digital"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF"/>
+  <meta name="msapplication-TileImage" content="https://blackrockdigital.io/img/ico/mstile-144x144.png"/>
+  <meta name="msapplication-square70x70logo" content="https://blackrockdigital.io/img/ico/mstile-70x70.png"/>
+  <meta name="msapplication-square150x150logo" content="https://blackrockdigital.io/img/ico/mstile-150x150.png"/>
+  <meta name="msapplication-wide310x150logo" content="https://blackrockdigital.io/img/ico/mstile-310x150.png"/>
+  <meta name="msapplication-square310x310logo" content="https://blackrockdigital.io/img/ico/mstile-310x310.png"/>
 
   <title>Welcome</title>
   <%= csrf_meta_tags %>
 
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous"/>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://blackrockdigital.io/main.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+
 </head>
-<!-- Signup-->
-<section class="contact-section bg-black" id="signup">
-    <div class="row">
-      <div class="col-md-10 col-lg-8 mx-auto text-center">
-        <h2 class="text-white mb-5">User Registration Application</h2>
-        <body>
-        <%= yield %>
-        </body>
-      </div>
-  </div>
-<!-- Contact-->
-<div class="contact-section bg-black">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 mb-3 mb-md-0">
-        <div class="card py-4 h-100">
-          <div class="card-body text-center">
-            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-            <h4 class="text-uppercase m-0">Address</h4>
-            <hr class="my-4"/>
-            <div class="small text-black-50">Kashyap Vadrevu, 301 King Street, San Francisco CA</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-3 mb-md-0">
-        <div class="card py-4 h-100">
-          <div class="card-body text-center">
-            <i class="fas fa-envelope text-primary mb-2"></i>
-            <h4 class="text-uppercase m-0">Email</h4>
-            <hr class="my-4"/>
-            <div class="small text-black-50"><a href="#!">kashyap.vad@gmail.com</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-3 mb-md-0">
-        <div class="card py-4 h-100">
-          <div class="card-body text-center">
-            <i class="fas fa-mobile-alt text-primary mb-2"></i>
-            <h4 class="text-uppercase m-0">Mobile</h4>
-            <hr class="my-4"/>
-            <div class="small text-black-50">+1 (650) 430-4038</div>
-          </div>
-        </div>
-      </div>
+
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <h1>User Registration Application</h1>
+      <%= yield %>
     </div>
   </div>
 </div>
-</section>
-<footer class="footer bg-black small text-center text-white-50">
-  <div class="container" id="pro">Professional Profile Links</div>
-  <div class="social d-flex justify-content-center">
-    <a class="mx-2" target="blank" href="https://www.linkedin.com/in/kashyap-vadrevu-505686ba/"><i class="fab fa-linkedin" id="pro"></i></a><a class="mx-2" target="blank" href="https://www.angel.co/u/kashyap-vadrevu"><i class="fab fa-angellist" id="pro"></i></a><a class="mx-2" target="blank" href="https://www.github.com/kashyapvad"><i class="fab fa-github" id="pro"></i></a>
+</body>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline">
+          <li>
+            <a href="mailto:kashyap.vad@gmail.com">
+              <i class="icon ion-ios-email-outline"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.github.com/kashyapvad">
+              <i class="icon ion-social-github-outline"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/kashyap-vadrevu-505686ba/">
+              <i class="icon ion-social-linkedin-outline"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
-</footer>
-<!-- Bootstrap core JS-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-<!-- Third party plugin JS-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-<!-- Core theme JS-->
-<script src="http://blackrockdigital.github.io/startbootstrap-grayscale/js/scripts.js"></script>
+</section>
+<script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        },
+            i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-38417733-27', 'auto');
+    ga('send', 'pageview');
+</script>
+
+</body>
+
 </html>

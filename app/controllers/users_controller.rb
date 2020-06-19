@@ -35,7 +35,7 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
-    if params[:commit].eql? 'reset'
+    if params[:commit].downcase.eql? 'reset'
       @reset = true
     end
     respond_to do |format|

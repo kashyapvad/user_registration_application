@@ -64,6 +64,10 @@ div {
   }
 }
 
+.input{
+  color: black;
+}
+
 #notice {
   color: white;
 }
@@ -73,40 +77,16 @@ div {
 }
 
 #button{
-  color: white;
+  color: black;
 }
 
 .field_with_errors {
-  padding: 2px;
   background-color: red;
+}
+
+.field {
+  padding: 2px;
   display: block;
-  text-align: center;
 }
 
-#error_explanation {
-  border: 2px solid red;
-  padding: 7px 7px 0;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
 
-  h2 {
-    text-align: left;
-    font-weight: bold;
-    padding: 5px 5px 5px 15px;
-    font-size: 12px;
-    margin: -7px -7px 0;
-    background-color: #c00;
-    color: #fff;
-  }
-
-  ul li {
-    font-size: 12px;
-    list-style: square;
-    color: black;
-  }
-}
-
-label {
-  display: block;
-  color: white;
-}
