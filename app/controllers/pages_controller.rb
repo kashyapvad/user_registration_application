@@ -23,3 +23,34 @@ class PagesController < ApplicationController
     end
   end
 end
+
+
+
+def solve_problem x
+  print_problem x
+end
+
+def print_problem x
+  puts x
+end
+
+class Node
+  class << self
+    attr_accessor :length
+  end
+  @length = 0
+  attr_accessor :data, :next
+
+  def initialize(data, next_node = nil)
+    self.data = data
+    self.next = next_node
+  end
+end
+
+def exep
+  begin
+    throw Exception
+  rescue
+    puts 'caught'
+  end
+end
