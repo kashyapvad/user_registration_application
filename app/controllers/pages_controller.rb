@@ -24,6 +24,9 @@ class PagesController < ApplicationController
   end
 end
 
+def seo_1
+
+end
 
 
 def solve_problem x

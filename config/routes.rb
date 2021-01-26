@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'pages#home'
+  root 'pages#seo_1'
 
   # REST end points for creating and updating a user
   resources :users, only: [:create, :edit, :update]
@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   # REST end point for a form to sign up a new user
   get 'signup', to: 'users#new', as: 'signup'
+  get 'seo-1', to: 'pages#seo_1'
 
   # REST end point for a form to log in an existing user
   get 'login', to: 'sessions#new', as: 'login'
