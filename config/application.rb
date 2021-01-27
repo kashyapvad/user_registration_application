@@ -13,7 +13,9 @@ module UserRegistrationApplication
     if Rails.env.development?
       config.before_configuration do
         env_file = File.join(Rails.root,'.env')
-        YAML.load(File.open(env_file)).each do |key, value|
+        YAML.load(File.open(env_file)).split(' ').each do |ele|
+          key = ele.split('=').first
+          value = ele.split('=').last
           ENV[key.to_s] = value
         end if File.exists?(env_file)
       end

@@ -12,6 +12,8 @@ class PagesController < ApplicationController
   end
 
   def seo_1
+    @name = 'Kashyap.'
+    set_surrogate_key_header @name
   end
 
   # Takes the submitted email by the user on forgot password page and checks whether a user exists in the database with that email
