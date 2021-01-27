@@ -12,7 +12,7 @@ class PagesController < ApplicationController
   end
 
   def seo_1
-    @name = 'Kashyap.'
+    @name = 'Kashyap Vadrevu.'
     set_surrogate_key_header @name
   end
 
