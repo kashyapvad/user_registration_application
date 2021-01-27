@@ -32,6 +32,7 @@ gem 'bcrypt', '~> 3.1.7'
 
 # to hide ids or use another field for index, show and edit actions in url
 gem 'friendly_id', '~> 5.2.4'
+gem 'fastly-rails'
 
 # for styling using bootsrap
 gem 'jquery-rails'

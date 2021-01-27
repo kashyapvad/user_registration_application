@@ -70,6 +70,10 @@ GEM
     crass (1.0.6)
     erubi (1.9.0)
     execjs (2.7.0)
+    fastly (1.15.0)
+    fastly-rails (0.8.0)
+      fastly (~> 1.6)
+      railties (> 2, < 6)
     ffi (1.13.0)
     friendly_id (5.2.5)
       activerecord (>= 4.0.0)
@@ -196,6 +200,7 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   coffee-rails (~> 4.2)
+  fastly-rails
   friendly_id (~> 5.2.4)
   jbuilder (~> 2.5)
   jquery-rails
@@ -214,4 +219,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.17.2
+   1.17.3
