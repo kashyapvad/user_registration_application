@@ -12,7 +12,8 @@ class PagesController < ApplicationController
   end
 
   def seo_1
-    @name = User.last.slug
+    @user = User.find(params[:id])
+    set_surrogate_key_header @user.record_key
     set_surrogate_key_header @name
   end
 
