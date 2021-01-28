@@ -18,6 +18,8 @@ class PagesController < ApplicationController
       @user = User.first
     when 'ny'
       @user = User.second
+    when 'il'
+      @user = User.third
     end
     set_surrogate_key_header @user.record_key
   end
