@@ -80,4 +80,8 @@ test:
 #
 production:
   <<: *default
-  database: user_registration_application_production
+  database: <%= ENV.fetch("DB") %>
+  username: <%= ENV.fetch("DB_USER") %>
+  password: <%= ENV.fetch("PASS") %>
+  host: <%= ENV.fetch("HOST") %>
+  uri: <%= ENV.fetch("DB_URI") %>
