@@ -2,7 +2,6 @@ class PagesController < ApplicationController
 
   # skips the authorization check for home page and form submission for resetting password
   skip_before_action :authorized
-  before_action :set_cache_control_headers, only: [:geo]
 
   def home
   end
